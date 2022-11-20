@@ -1,0 +1,103 @@
+body {
+    margin: 0 auto;
+}
+
+section.top-page {
+    background: url(fond\ 3.0.jpg);
+    background-size: cover;
+    height: 55vh;
+    width: 1000px;
+}
+
+
+
+nav 
+{
+    margin: 0px auto;
+    width: 50%;
+    height: 100px;
+    background-color: hsl(251, 64%, 6%);
+    width: 1000px;
+}
+ 
+nav .main_pages 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+nav .main_pages a 
+{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+ 
+nav a:hover 
+{
+    background: #5A5766
+}
+
+label, #toggle
+{
+    display: none;
+}
+ 
+@media all and (max-width: 991px)
+{
+    nav
+    {
+        height: 60px;
+    }
+ 
+    nav .main_pages 
+    {
+        display: none;
+        flex-direction: column;
+        background: hsl(251, 64%, 6%);
+        height: 220px;
+    }
+ 
+    nav .main_pages a {
+        width: 50%;
+    }
+ 
+    label 
+    {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 40px;
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+    }
+ 
+    #toggle:checked + .main_pages {
+        display: flex;
+    }
+}
+
+h1{
+    color: hsl(240, 8%, 93%);
+}
+
+
+
+h2{
+   color: aliceblue;
+   background-color: hsl(248, 64%, 18%);
+   width: 450px;
+   height: 200px;
+}
+img{
+    height: 350px;
+}
+    
